@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the type of cake"
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-request"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter type of cake"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-request"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e Chiffon cake, Pound cake, Carrot cake</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded by
